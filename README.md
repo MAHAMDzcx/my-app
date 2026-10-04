@@ -1,11 +1,27 @@
-<div align="center">
+# Quran Radio Discord Bot
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## Termux setup
 
-  <h1>Built with AI Studio</h2>
+```bash
+pkg update -y
+pkg install nodejs ffmpeg -y
+cp .env.example .env
+nano .env
+npm install
+npm start
+```
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+ضع توكن البوت داخل `.env` فقط:
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+```env
+TOKEN=توكن_البوت
+```
 
-</div>
+ثم استخدم في Discord:
+
+- `/join` لدخول القناة وتشغيل البث
+- `/quran` لتغيير الإذاعة
+- `/status` لعرض الحالة
+- `/stop` لإيقاف البث
+
+صلاحيات البوت المطلوبة: View Channel وConnect وSpeak.
